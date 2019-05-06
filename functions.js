@@ -25,7 +25,7 @@ function saveHtml(url, path,  body) {
         fs.writeFile(fname, body, error_file => {
             if (error_file)
                 return reject(error_file);
-            resolve({path: path, filename: fname, length: body.length});
+            resolve({path: path, filename: fname, length:  (typeof(body) != 'undefined' ? body.length : 0)  });
         })
     });
 
