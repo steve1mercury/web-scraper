@@ -1,0 +1,24 @@
+extends layout
+block head
+  script(src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous")
+
+block content
+  h1= title
+  p #{instructions}
+
+  each _, i in Array(10)
+    p(style='white-space:pre;')
+    input( id="url" + i,  type="text",  placeholder="Enter URL", name = "url[" + i + "]",  class = "urls")
+
+  p(style='white-space:pre;')
+  ul#results
+  p(style='white-space:pre;')
+  input#btnSubmit(type="submit", value="Submit", name="btnSubmit")
+
+  script(src="javascripts/functions.js")
+
+
+
+
