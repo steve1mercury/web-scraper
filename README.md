@@ -1,4 +1,5 @@
 web-scraper
+
 This Node.Js appliction copies Index Page html from up to 10 domains to local subdirectory. The extracted files are saved in the /fetchdata underneath the web-scraper project root
 
 To run via command line: (Note: must have NPM and Node installed).
