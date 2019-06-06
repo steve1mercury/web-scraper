@@ -8,8 +8,4 @@ To run via command line:   (Note: must have NPM and Node installed).
 2) Check console log for name of temporary subdirectory under /fetchdata
 3) Review extracted html files in /fetchdata/{temp subdirectory name}
 
-To run via a browser 
 
-1) Start server by Running command:  npm start
-2) Then open browser to address http://localhost:3000
-3) Enter   URL's (FQDN) and click Submit.  After processing, the location of the Index files will be displayed.
